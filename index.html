@@ -15,28 +15,45 @@
 		    <form  action="registro.php" method="POST">
                 <div class="form-group">
                     <label for="txtemail">DNI</label>
-                    <input type="text" class="form-control" name="txtdni" placeholder="Ingrese aqui">
+                    <input type="text" class="form-control" name="txtdni" id="txtdni" placeholder="Ingrese aqui">
                 </div>
 				<div class="form-group">
 					<label for="txtnombres">Nombres</label>
-					<input type="text" class="form-control" name="txtnombres" placeholder="Ingrese aqui">
+					<input type="text" class="form-control" name="txtnombres" id="txtnombres" placeholder="Ingrese aqui">
+				</div>
+				<div class="form-group">
+					<label for="txtapellidos">Apellido Paterno</label>
+					<input type="text" class="form-control" name="txtapellidoP" id="txtapellidoP" placeholder="Ingrese aqui">
 				</div>
 				<div class="form-group">
 					<label for="txtapellidos">Apellido Materno</label>
-					<input type="text" class="form-control" name="txtapellidoM" placeholder="Ingrese aqui">
+					<input type="text" class="form-control" name="txtapellidoM" id="txtapellidoM" placeholder="Ingrese aqui">
                 </div>
-                <div class="form-group">
-					<label for="txtapellidos">Apellido Paterno</label>
-					<input type="text" class="form-control" name="txtapellidoP" placeholder="Ingrese aqui">
+				<div class="form-group">
+					<label for="cboescuela">Elegir escuela</label>
+					<select class="form-control" id="cboescuela" name="cboescuela">
+						<option value="Sistemas">Sistemas</option>
+						<option value="Civil">Civil</option>
+						<option value="Mecánica">Mecánica</option>
+						<option value="Industrial">Industrial</option>
+						<option value="Arquitectura">Arquitectura</option>
+						<option value="Medicina">Medicina</option>
+						<option value="Enfermería">Enfermería</option>
+						<option value="Administración">Administración</option>
+						<option value="Contabilidad">Contabilidad</option>
+						<option value="Economía">Economía</option>
+					</select>
 				</div>
 				<div class="form-group">
-					<label for="txtemail">Escuela Profesional</label>
-					<input type="text" class="form-control" name="txtescuela"  placeholder="Ingrese aqui">
-                </div>
-                <div class="form-group">
-					<label for="txtemail">Universidad</label>
-					<input type="text" class="form-control" name="txtuniversidad"  placeholder="Ingrese aqui">
-                </div>
+					<label for="cbouniversidad">Universidad de procedencia</label>
+					<select class="form-control" id="cbouniversidad" name="cbouniversidad">
+						<option value="USAT"> USAT</option>
+						<option value="UNPRG"> UNPRG</option>
+						<option value="SAN Martin"> SAN MARTIN</option>
+						<option value="UMB"> UMB</option>
+						<option value="SIPAN"> SIPAN</option>
+					</select>
+				</div>
                 <div class="form-group">
                    <button  class="btn btn-primary" type="submit">Guardar</button><br>
                 </div>
