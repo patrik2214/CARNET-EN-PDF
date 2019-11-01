@@ -10,9 +10,11 @@
 </head>
 <body>
 <div class="container">
+	<br>
 	<h1>CARNET DE ASISTENTE</h1>
+	<br>
 		<div>
-		    <form  action="registro.php" method="POST">
+		    <form  action="registro.php" method="POST" enctype="multipart/form-data">
                 <div class="form-group">
                     <label for="txtemail">DNI</label>
                     <input type="text" class="form-control" name="txtdni" id="txtdni" placeholder="Ingrese aqui">
@@ -53,6 +55,10 @@
 						<option value="UMB"> UMB</option>
 						<option value="SIPAN"> SIPAN</option>
 					</select>
+				</div>
+				<div class="form-group">
+					<label for="uploadedfile">Sube tu foto</label>
+					<input type="file" class="form-control-file" name="img" id="img" >
 				</div>
                 <div class="form-group">
                    <button  class="btn btn-primary" type="submit">Guardar</button><br>
